@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#3212a8,#5b35d5,#7d63ff);
+    min-height:100vh;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+header{
+    width:100%;
+    padding:25px 8%;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h2{
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#6fd3ff;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#9fdcff;
+}
+
+.btn{
+    text-decoration:none;
+    color:#fff;
+    background:#7c5cff;
+    padding:14px 34px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#6b4eff;
+}
+
+.hero{
+    width:100%;
+    padding:60px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.tags{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.tags span{
+    padding:10px 20px;
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:30px;
+    backdrop-filter:blur(12px);
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:72px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#9fdcff;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    color:#ececec;
+    max-width:550px;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:18px 40px;
+    background:#7c5cff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-5px);
+    background:#6948ff;
+}
+
+.hero-image{
+    width:50%;
+    position:relative;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+.diver{
+    position:absolute;
+    width:170px !important;
+    left:-40px;
+    top:180px;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+@media(max-width:992px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text,
+.hero-image{
+width:100%;
+}
+
+.menu{
+display:none;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.tags{
+justify-content:center;
+}
+
+}
